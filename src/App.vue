@@ -1,28 +1,36 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <main>
+      <h1>Johan Bos</h1>
+      <p>Hi there! Welcome to my Continuous Improvement trackrecord.</p>
+      <MyEvents/>
+    </main>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import MyEvents from "./components/MyEvents.vue";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    HelloWorld,
-  },
+    MyEvents
+  }
 };
 </script>
 
 <style>
+body {
+  background: linear-gradient(to bottom right, white, green);
+  background-attachment: fixed;
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  padding: 5px;
+  background: white;
 }
 </style>
