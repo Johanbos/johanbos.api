@@ -58,7 +58,7 @@ const events = {
         {
             date: '2011-02-01',
             type: 'Job',
-            timespan: 'Still working!',
+            timespan: 'current job',
             title: 'Vacanceselect',
             reference: 'https://vacanceselect.com',
             story: 'A time of growth. Starting with a small team, growing to multiple teams. Uncovered every detail about WebForms, MVC, how the internet works, telemetry insights, large volume websites, large infrastructure, storyboarding, communication with stakeholders, monolith applications, web services, build pipelines, docker, linux.'
@@ -76,7 +76,7 @@ const events = {
             type: 'Job',
             timespan: '4 years',
             title: 'De Haan Automatisering',
-            reference: 'Hessel de Haan',
+            reference: 'https://twitter.com/hesseldehaan',
             story: 'My first fulltime job doing a project for multiple customers. Having a small teams of programmers, code versioning, large code base, working in Delphi, Firebase, Visual Studio with .net compact framework. Did projects on fishing vessls tracking boxes of caught fish for https://youngsseafood.co.uk.'
         },
         {
