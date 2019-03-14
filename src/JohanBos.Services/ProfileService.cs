@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using JohanBos.Data;
+using JohanBos.Data.Interfaces;
 using JohanBos.Services.Interfaces;
 using JohanBos.Models;
 using System;
