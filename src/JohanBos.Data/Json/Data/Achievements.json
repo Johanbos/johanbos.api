@@ -1,0 +1,84 @@
+[
+  {
+    "title": "Vue Fundamentals",
+    "motivator": "Learn new front-end frameworks, in order to assist front-end developers better.",
+    "achievemenType": "Training",
+    "completed": "2018-12-01",
+    "reference": "https: //app.pluralsight.com/library/courses/vuejs-fundamentals"
+  },
+  {
+    "title": "Vue startup",
+    "motivator": "Learn new front-end frameworks, in order to assist front-end developers better.",
+    "achievemenType": "Training",
+    "completed": "2018-08-31",
+    "reference": "https: //app.pluralsight.com/player?course=vuejs-getting-started"
+  },
+  {
+    "title": "React",
+    "motivator": "Learn new front-end frameworks, in order to assist front-end developers better.",
+    "achievemenType": "Training",
+    "completed": "2018-08-16",
+    "reference": "https: //www.codecademy.com/learn/react-102"
+  },
+  {
+    "title": "Bash",
+    "motivator": "Do everything with cli!",
+    "completed": "2018-08-11",
+    "achievemenType": "Training",
+    "reference": "https: //www.codecademy.com/learn/learn-the-command-line"
+  },
+  {
+    "title": "Shortcut Ninja",
+    "motivator": "The mouse was a workaround. Leave it be.",
+    "achievemenType": "Training",
+    "completed": "2016-03-03",
+    "reference": "https: //www.shortcutfoo.com"
+  },
+  {
+    "completed": "2015-01-01",
+    "achievemenType": "Training",
+    "title": "Windows Powershell",
+    "reference": ""
+  },
+  {
+    "completed": "2015-01-01",
+    "achievemenType": "Training",
+    "title": "Git",
+    "reference": "https://git-scm.com/"
+  },
+  {
+    "completed": "2014-01-01",
+    "achievemenType": "Training",
+    "title": "Scrum",
+    "reference": "https://www.scrum.org",
+    "motivator": "Who doesn't want to structure his work. Love kanban!"
+  },
+  {
+    "completed": "2009-01-01",
+    "achievemenType": "Training",
+    "title": "Microsoft .net (Exam)",
+    "reference": "https: //www.infosupport.com/",
+    "motivator": "Became expert in .net Framework 2.0/3.5. ASP.NET WebForm, MVC, WPF, ADO.NET."
+  },
+  {
+    "completed": "2007-02-01",
+    "achievemenType": "Training",
+    "title": "BHV",
+    "reference": "https: //www.bhvnederland.nl/bhv-cursus/locaties/heerenveen",
+    "motivator": "I love helping out. Maybe become a firefighter one day?"
+  },
+  {
+    "title": "Informatica Bachelor",
+    "completed": "2005-06-01",
+    "achievemenType": "Training",
+    "reference": "https: //www.nhlstenden.com/hbo-opleidingen/informatica",
+    "motivator": "By far the best time of my learning journey. I was made for this! Learned Java, Pascal, n-tier Architecture, php, html, css, Presenting, 3D engines, video capturing, creating robots! Ending my journey here with a 10 (of 10) for programming skills."
+  },
+  {
+    "title": "Havo",
+    "motivator": "",
+    "completed": "2000-06-01",
+    "achievemenType": "Training",
+    "reference": "https: //www.csg-comenius.nl/opleidingen/Havo",
+  }
+]

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using JohanBos.Models;
 
-namespace JohanBos.Data.Interfaces
+namespace JohanBos.Data
 {
     public interface IAchievementRepository
     {

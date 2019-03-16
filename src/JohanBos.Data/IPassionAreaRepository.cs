@@ -4,7 +4,7 @@ using System.Diagnostics.Contracts;
 using System.Threading.Tasks;
 using JohanBos.Models;
 
-namespace JohanBos.Data.Interfaces
+namespace JohanBos.Data
 {
     public interface IPassionAreaRepository
     {

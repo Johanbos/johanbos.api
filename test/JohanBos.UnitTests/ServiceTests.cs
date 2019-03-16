@@ -1,7 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using JohanBos.Data.Interfaces;
+using JohanBos.Data;
 using JohanBos.Services;
-using JohanBos.Services.Interfaces;
 using Moq;
 
 namespace JohanBos.UnitTest
