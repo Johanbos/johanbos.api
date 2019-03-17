@@ -34,5 +34,13 @@ namespace JohanBos.UnitTest
             Assert.IsNotNull(actual);
             Assert.IsTrue(actual.Any());
         }
+
+        [TestMethod]
+        public async Task TestProfileRepositoryReturnsOne()
+        {
+            var profileRepository = new ProfileRepository();
+            var actual = await profileRepository.GetOne().ConfigureAwait(false);
+            Assert.IsNotNull(actual);
+        }
     }
 }

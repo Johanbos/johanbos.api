@@ -8,5 +8,6 @@ namespace JohanBos.Services
     public interface IProfileService
     {
         Task<IEnumerable<PassionArea>> GetAllPassionAreas();
+        Task<Profile> GetProfile();
     }
 }

@@ -1,10 +1,30 @@
 [
   {
+    "title": "Conquered Tinnitus",
+    "motivator": "Sometimes life gives you lemons. I'm happy to have loads of lemonade.",
+    "achievemenType": "Mental",
+    "completed": "2019-03-01",
+    "reference": "https://en.wikipedia.org/wiki/Tinnitus"
+  },
+  {
+    "title": "Mindfullness",
+    "motivator": "Getting the mind stronger then the body, has it advantages.",
+    "achievemenType": "Training",
+    "completed": "2018-12-14",
+    "reference": "https://demindfulfysiotherapeut.nl/"
+  },
+  {
     "title": "Vue Fundamentals",
     "motivator": "Learn new front-end frameworks, in order to assist front-end developers better.",
     "achievemenType": "Training",
     "completed": "2018-12-01",
     "reference": "https: //app.pluralsight.com/library/courses/vuejs-fundamentals"
+  },
+  {
+    "title": "Got glasses. I finally csharp! 🤓",
+    "motivator": "So much headaches. Such an easy cure. Now I'm truly one of the guys.",
+    "achievemenType": "Physical",
+    "completed": "2018-11-02"
   },
   {
     "title": "Vue startup",
@@ -28,6 +48,12 @@
     "reference": "https: //www.codecademy.com/learn/learn-the-command-line"
   },
   {
+    "title": "Emily Bos",
+    "motivator": "My second child, the prettiest little thing ever.",
+    "achievemenType": "Physical",
+    "completed": "2017-11-20"
+  },
+  {
     "title": "Shortcut Ninja",
     "motivator": "The mouse was a workaround. Leave it be.",
     "achievemenType": "Training",
@@ -45,6 +71,12 @@
     "achievemenType": "Training",
     "title": "Git",
     "reference": "https://git-scm.com/"
+  },
+  {
+    "title": "Bryan Bos",
+    "motivator": "My frirst child, kickass awesome little fellow.",
+    "achievemenType": "Physical",
+    "completed": "2014-11-13"
   },
   {
     "completed": "2014-01-01",
