@@ -17,4 +17,16 @@ spec:
           image: johanbosnl/johanbos:latest
           ports:
             - containerPort: 80
-              hostPort: 5000
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: johanbos-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: johanbos
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
