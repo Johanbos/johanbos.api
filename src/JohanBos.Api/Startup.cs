@@ -70,7 +70,6 @@ namespace JohanBos.Api
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
             app.UseGraphQL<ISchema>("/graphql");
             app.UseGraphQLPlayground(new GraphQLPlaygroundOptions
             {
