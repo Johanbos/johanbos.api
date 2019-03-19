@@ -3,12 +3,11 @@ using JohanBos.Models;
 
 namespace JohanBos.Api.Types
 {
-    public class ProfileType : ObjectGraphType<Profile>
+    public class BioType : ObjectGraphType<Bio>
     {
-        public ProfileType()
+        public BioType()
         {
-            Name = "Profile";
-
+            Name = "Bio";
             Field(h => h.DateOfBirth);
             Field(h => h.FullName);
             Field(h => h.Motivator, nullable: true);

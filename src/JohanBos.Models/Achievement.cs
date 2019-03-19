@@ -8,6 +8,6 @@ namespace JohanBos.Models
         public string Motivator { get; set; }
         public AchievementType AchievementType { get; set; }
         public DateTime? Completed { get; set; }
-        public Uri Reference { get; set; }
+        public string Reference { get; set; }
     }
 }

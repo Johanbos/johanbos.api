@@ -7,14 +7,14 @@ using System;
 
 namespace JohanBos.Services
 {
-    public class ProfileService : IProfileService
+    public class BioService : IBioService
     {
-        private readonly IProfileRepository profileRepository;
+        private readonly IBioRepository bioRepository;
         private readonly IPassionAreaRepository passionAreaRepository;
 
-        public ProfileService(IPassionAreaRepository passionAreaRepository, IProfileRepository profileRepository)
+        public BioService(IPassionAreaRepository passionAreaRepository, IBioRepository bioRepository)
         {
-            this.profileRepository = profileRepository ?? throw new ArgumentNullException(nameof(profileRepository));
+            this.bioRepository = bioRepository ?? throw new ArgumentNullException(nameof(bioRepository));
             this.passionAreaRepository = passionAreaRepository ?? throw new ArgumentNullException(nameof(passionAreaRepository));
         }
 
@@ -23,9 +23,9 @@ namespace JohanBos.Services
             return passionAreaRepository.GetAll();
         }
 
-        public Task<Profile> GetProfile()
+        public Task<Bio> GetBio()
         {
-            return profileRepository.GetOne();
+            return bioRepository.GetBio();
         }
     }
 }

@@ -5,8 +5,8 @@ using JohanBos.Models;
 
 namespace JohanBos.Data
 {
-    public interface IProfileRepository
+    public interface IBioRepository
     {
-        Task<Profile> GetOne();
+        Task<Bio> GetBio();
     }
 }

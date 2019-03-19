@@ -5,9 +5,9 @@ using JohanBos.Models;
 
 namespace JohanBos.Services
 {
-    public interface IProfileService
+    public interface IBioService
     {
         Task<IEnumerable<PassionArea>> GetAllPassionAreas();
-        Task<Profile> GetProfile();
+        Task<Bio> GetBio();
     }
 }

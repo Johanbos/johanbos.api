@@ -2,7 +2,7 @@
 
 namespace JohanBos.Models
 {
-    public class Profile
+    public class Bio
     {
         public string FullName { get; set; }
         public string Motivator { get; set; }

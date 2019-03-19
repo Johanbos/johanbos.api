@@ -41,12 +41,18 @@ namespace JohanBos.Api
             services.AddSingleton<IDependencyResolver>(s => new FuncDependencyResolver(s.GetRequiredService));
             services.AddSingleton<IDocumentExecuter, DocumentExecuter>();
             services.AddSingleton<IDocumentWriter, DocumentWriter>();
-            services.AddTransient<IProfileService, ProfileService>();
             services.AddTransient<IPassionAreaRepository, Data.Json.PassionAreaRepository>();
-            services.AddTransient<IProfileRepository, Data.Json.ProfileRepository>();
-            services.AddTransient<JohanBosQuery>();
-            services.AddTransient<ProfileType>();
-            services.AddSingleton<ISchema, JohanBosSchema>();
+            services.AddTransient<IAchievementRepository, Data.Json.AchievementRepository>();
+            services.AddTransient<IEmployerRepository, Data.Json.EmployerRepository>();
+            services.AddTransient<IBioRepository, Data.Json.BioRepository>();
+            services.AddTransient<IBioService, BioService>();
+            services.AddTransient<IHistoryService, HistoryService>();
+            services.AddTransient<BioType>();
+            services.AddTransient<PassionAreaType>();
+            services.AddTransient<EmployerType>();
+            services.AddTransient<AchievementType>();
+            services.AddTransient<GraphQLQuery>();
+            services.AddSingleton<ISchema, GraphQLSchema>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddGraphQL(g =>
             {
@@ -68,7 +74,7 @@ namespace JohanBos.Api
             app.UseGraphQL<ISchema>("/graphql");
             app.UseGraphQLPlayground(new GraphQLPlaygroundOptions
             {
-                Path = "graphql/ui"
+                Path = "/graphqlui"
             });
         }
     }

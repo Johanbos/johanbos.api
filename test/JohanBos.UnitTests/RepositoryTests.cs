@@ -36,10 +36,10 @@ namespace JohanBos.UnitTest
         }
 
         [TestMethod]
-        public async Task TestProfileRepositoryReturnsOne()
+        public async Task TestBioRepositoryReturnsOne()
         {
-            var profileRepository = new ProfileRepository();
-            var actual = await profileRepository.GetOne().ConfigureAwait(false);
+            var bioRepository = new BioRepository();
+            var actual = await bioRepository.GetBio().ConfigureAwait(false);
             Assert.IsNotNull(actual);
         }
     }
