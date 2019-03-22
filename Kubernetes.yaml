@@ -1,32 +1,32 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: johanbos-deployment
+  name: johanbos-api-deployment
 spec:
   selector:
     matchLabels:
-      app: johanbos
+      app: johanbos-api
   replicas: 2 # tells deployment to run 2 pods matching the template
   template:
     metadata:
       labels:
-        app: johanbos
+        app: johanbos-api
     spec:
       containers:
-        - name: johanbos
-          image: johanbosnl/johanbos:latest
+        - name: johanbos-api
+          image: johanbosnl/johanbos.api:latest
           ports:
             - containerPort: 80
 ---
 kind: Service
 apiVersion: v1
 metadata:
-  name: johanbos-service
+  name: johanbos-api-service
 spec:
   type: LoadBalancer
   selector:
-    app: johanbos
+    app: johanbos-api
   ports:
     - protocol: TCP
-      port: 80
+      port: 81
       targetPort: 80
