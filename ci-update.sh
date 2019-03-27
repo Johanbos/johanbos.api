@@ -4,4 +4,4 @@
 #kubectl rolling-update frontend --image=johanbosnl/johanbos:latest
 
 kubectl apply -f .\Kubernetes.yaml
-kubectl rollout status deployment johanbos-deployment
+kubectl rollout status deployment johanbos-api-deployment
