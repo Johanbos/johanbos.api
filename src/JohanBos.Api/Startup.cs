@@ -38,6 +38,7 @@ namespace JohanBos.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddHealthChecks();
             services.AddSingleton<IDependencyResolver>(s => new FuncDependencyResolver(s.GetRequiredService));
             services.AddSingleton<IDocumentExecuter, DocumentExecuter>();
             services.AddSingleton<IDocumentWriter, DocumentWriter>();
@@ -70,6 +71,7 @@ namespace JohanBos.Api
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseHealthChecks("/health");
             app.UseGraphQL<ISchema>("/graphql");
             app.UseGraphQLPlayground(new GraphQLPlaygroundOptions
             {
