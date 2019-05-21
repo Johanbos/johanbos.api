@@ -14,9 +14,9 @@ namespace JohanBos.Data.Json
         {
             using (var httpClient = new HttpClient())
             {
-                var response = await httpClient.GetAsync("https://johanbos.github.io/interests.json");
+                var response = await httpClient.GetAsync("https://johanbos.github.io/interests.json").ConfigureAwait(false);
                 response.EnsureSuccessStatusCode();
-                var content = await response.Content.ReadAsStringAsync();
+                var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
                 return JsonConvert.DeserializeObject<IEnumerable<PassionArea>>(content);
             }
         }

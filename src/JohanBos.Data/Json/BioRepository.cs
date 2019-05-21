@@ -15,9 +15,9 @@ namespace JohanBos.Data.Json
         {
             using (var httpClient = new HttpClient())
             {
-                var response = await httpClient.GetAsync("https://johanbos.github.io/bio.json");
+                var response = await httpClient.GetAsync("https://johanbos.github.io/bio.json").ConfigureAwait(false);
                 response.EnsureSuccessStatusCode();
-                var content = await response.Content.ReadAsStringAsync();
+                var content = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
                 return JsonConvert.DeserializeObject<Bio>(content);
             }
         }
