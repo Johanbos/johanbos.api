@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
+using System.Net.Http;
 using System.Threading.Tasks;
 using JohanBos.Models;
 using Newtonsoft.Json;
@@ -11,8 +12,13 @@ namespace JohanBos.Data.Json
     {
         public async Task<IEnumerable<Employer>> GetAll()
         {
-            var content = await Data.GetResource("Employers").ConfigureAwait(false);
-            return JsonConvert.DeserializeObject<IEnumerable<Employer>>(content);
+            using (var httpClient = new HttpClient())
+            {
+                var response = await httpClient.GetAsync("https://johanbos.github.io/employers.json");
+                response.EnsureSuccessStatusCode();
+                var content = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<IEnumerable<Employer>>(content);
+            }
         }
     }
 }

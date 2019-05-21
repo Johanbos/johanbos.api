@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using JohanBos.Models;
 using Newtonsoft.Json;
 using JohanBos.Data;
+using System.Net.Http;
 
 namespace JohanBos.Data.Json
 {
@@ -12,8 +13,13 @@ namespace JohanBos.Data.Json
     {
         public async Task<IEnumerable<Achievement>> GetAll()
         {
-            var content = await Data.GetResource("Achievements").ConfigureAwait(false);
-            return JsonConvert.DeserializeObject<IEnumerable<Achievement>>(content);
+            using (var httpClient = new HttpClient())
+            {
+                var response = await httpClient.GetAsync("https://johanbos.github.io/achievements.json");
+                response.EnsureSuccessStatusCode();
+                var content = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<IEnumerable<Achievement>>(content);
+            }
         }
     }
 }
